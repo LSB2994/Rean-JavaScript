@@ -1,6 +1,13 @@
-// function sum(...args){
-//     console.log('arg: ',args)
-// }sum(1,2,3);
+function sum(x,y,...args){
+    console.log('arg: ',args)
+    return x+y
+}
+console.log("rest: ",sum(1,2,3,4,5,6));
+
+function everything(...a){
+    console.log('everything',a)
+}
+everything('hello',1,2,true)
 
 //for function call
 function sum2(...num){
